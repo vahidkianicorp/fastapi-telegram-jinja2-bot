@@ -1,0 +1,9 @@
+services:
+  telegram-bot:
+    build: .
+    ports:
+      - "8099:8000"
+    environment:
+      - TELEGRAM_BOT_TOKEN=YOUR_TELEGRAM_TOKEN
+    volumes:
+      - .:/app
